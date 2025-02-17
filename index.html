@@ -6,49 +6,103 @@
     <title>Registro de Usuario</title>
 </head>
 <body>
-    <h1>Registro de Usuario</h1>
-    <form action="">
-        <label for="">Nombres:</label>
-        <input type="text" placeholder="Nombres">
-        <label for="">Apellidos</label>
-        <input type="text" placeholder="Apellidos">
-        <label for="">Edad</label>
-        <input type="number" placeholder="Edad" size="3px">
+    <form action="#">
+        <table border="1px">
+            <tr>
+                <td>
+                    Nombre
+                    <br>
+                    <input type="text">
+                </td>
+                <td>
+                    Apellido
+                    <br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fecha de Nacimiento
+                    <br>
+                    <input type="date">
+                </td>
+                <td>
+                    Lugar de Nacimiento
+                    <br>
+                    <select name="opciones" id="opciones">
+                        <option value="Valor">seleccione una ciudad</option>
+                        <option value="Valor1">Bogota</option>
+                        <option value="Valor2">Medellin</option>
+                        <option value="Valor2">Cartagena</option>
+                        <option value="Valor2">Cundinamarca</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Direccion de Residencia
+                    <br>
+                    <input type="text" size="44">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Telefono
+                    <br>
+                    <input type="number">
+                </td>
+                <td>
+                    e-mail
+                    <br>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br>
+                    Genero
+                    <br>
+                    <br>
+                    <input type="radio" name="Genero" id="">
+                    <label for="">Masculino</label>
+                    <br>
+                    <input type="radio" name="Genero" id="">
+                    <label for="">Femenino</label>
+                    <br>
+                    <input type="radio" name="Genero" id="">
+                    <label for="">Otro</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <br>Hobbies</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                    <label for="">Musica</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">Pintura</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">Otro tipo de arte</label>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <label for="">Natacion</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">Ciclismo</label>
+                    <br>
+                    <input type="checkbox">
+                    <label for="">Patinaje</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Limpiar formulario"></td>
+                <td><input type="submit" value="Enviar formulario"></td>
+            </tr>
+        </table>
     </form>
-    <span>Email <input type="email" placeholder="Email"> Contraseña <input type="password" placeholder="Contraseña"></span>
-    <h2>Género:</h2>
-    <form action="">
-        <input type="radio" name="Genero" id="">
-        <label for="">Masculino</label>
-        <input type="radio" name="Genero" id="">
-        <label for="">Femenino</label>
-        <input type="radio" name="Genero" id="">
-        <label for="">Otro</label>
-    </form>
-    <h2>Seleccione un dispositivo</h2>
-    <form action="">
-        <label for="">Macbook</label>
-        <input type="checkbox">
-        <label for="">iPhone</label>
-        <input type="checkbox">
-        <label for="">iPad</label>
-        <input type="checkbox">
-        <label for="">Windows</label>
-        <input type="checkbox">
-        <label for="">Android</label>
-        <input type="checkbox">
-        <br>
-        <label for="">¿Como escuchaste sobre nosotros?</label>
-        <select name="opciones" id="opciones">
-            <option value="Valor1">Busqueda en internet</option>
-            <option value="Valor2">Amigos o familiares</option>
-        </select>
-        <br>
-        <label for="">Quiero recibir notificaciones de promociones.</label>
-        <input type="checkbox">
-        <br>
-        <input type="submit" value="Registrarme">
-    </form>
-
 </body>
 </html>
